@@ -1,4 +1,28 @@
-# DevOps Capstone Template
+# devops-capstone-project
+(Final Course of "IBM DevOps and Software Engineering" certificate)
+
+That DevOps capstone project aims at bringing into practice DevOps concepts learned over past 12 courses. It simulates the build and delivering of a Customer Accounts RESTful microservice.
+
+It involves an Agile plan with 3 main sprints. Here are the steps:
+
+1) "Sprint 0": Build an Agile plan and a Kanban board with user stories
+(concepts: Agile Plan, Kanban board, user story template, user stories, Product Backlog, Sprint Backlog)
+
+2) Sprint 1: Develop a RESTful microservice using good TDD techniques (prepopulated project)
+(concepts: REST API, project environment, TDD, Kanban board, Backlog, GitHub commands, RESTful endpoints / test cases for List, Read, Update, and Delete, nosetests, test coverage)
+
+3) Sprint 2: Configure GitHub Action CI workflow and security practices
+(concepts: GitHub Actions, CI, workflow, linting, Flake8, test coverage, security, vulnerabilities, Flask-Talisman, Flask-CORS)
+
+4) Sprint 3: Manual Deployement
+(concepts: CI, Dockerfile and image, IBM Cloud Container Registry, OpenShift/Kubernetes, PostgreSQL, YAML manifest)
+
+5) Automated deployement using Tekton CD pipeline
+(concepts: CD, Docker, OpenShift, YAML, Tekton)
+
+__________________________________________________________________________________________________________________________________________________________________________________________________
+
+## DevOps Capstone Template
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.9](https://img.shields.io/badge/Python-3.9-green.svg)](https://shields.io/)
