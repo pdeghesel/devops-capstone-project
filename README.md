@@ -1,5 +1,8 @@
 # devops-capstone-project
-(Final Course of "IBM DevOps and Software Engineering" certificate)
+
+![Build Status](https://github.com/pdeghesel/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
+
+Final Course of "IBM DevOps and Software Engineering" certificate
 
 That DevOps capstone project aims at bringing into practice DevOps concepts learned over past 12 courses. It simulates the build and delivering of a Customer Accounts RESTful microservice.
 
