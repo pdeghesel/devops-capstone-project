@@ -134,7 +134,7 @@ class TestAccountService(TestCase):
         )
         # assert that the resp.status_code is status.HTTP_200_OK
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
-        # get the data from resp.get_json() 
+        # get the data from resp.get_json()
         data = resp.get_json()
         # assert that data["name"] equals the account.name
         self.assertEqual(data["name"], account.name)
