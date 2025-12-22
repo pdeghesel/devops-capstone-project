@@ -15,6 +15,7 @@ spec:
     - name: repo-url
     - name: branch
       default: main
+    - name: build-image
   tasks:
     - name: init
       workspaces:
@@ -74,7 +75,7 @@ spec:
         kind: ClusterTask
       params:
       - name: IMAGE
-        value: "$(params.build-image)"
+        value: $(params.build-image)
       runAfter:
         - tests
         - lint
@@ -87,13 +88,13 @@ spec:
         name: openshift-client
         kind: ClusterTask
       params:
-      - name: SCRIPT
+      - name: SCRIPT 
         value: |
           echo "Updating manifest..."
           sed -i "s|IMAGE_NAME_HERE|$(params.build-image)|g" deploy/deployment.yaml
           cat deploy/deployment.yaml
           echo "Deploying to OpenShift..."
           oc apply -f deploy/
-          oc get pods -l app=accounts
+          oc get pods -l app=accounts 
       runAfter:
         - build
